@@ -18,10 +18,16 @@ import java.util.Date;
 public class ProjectMember extends BaseEntity {
 
     @ManyToOne
-    @JoinColumn(name = "project_id")
+    @JoinColumn(name = "PROJECT_ID", foreignKey = @ForeignKey(name = "FK_PROJECT_MEMBER"))
     private Project project;
 
+    @Column(name = "ROLE_ID")
+    private Long roleId;
+
+    @Column(name = "START_DATE")
     private Date startDate;
+
+    @Column(name = "END_DATE")
     private Date endDate;
 
 }

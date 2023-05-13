@@ -18,13 +18,28 @@ import java.util.Date;
 public class Wbs extends BaseEntity {
 
     @ManyToOne
-    @JoinColumn(name = "project_id")
+    @JoinColumn(name = "PROJECT_ID", foreignKey = @ForeignKey(name = "FK_PROJECT_WBS"))
     private Project project;
+
+    @Column(name = "WBS_TITLE")
+    private String wbsTitle;
+
+    @Column(name = "SCHEDULE_START_DATE")
     private Date scheduleStartDate;
+
+    @Column(name = "SCHEDULE_END_DATE")
     private Date scheduleEndDate;
+
+    @Column(name = "ACTUAL_START_DATE")
     private Date actualStartDate;
+
+    @Column(name = "ACTUAL_END_DATE")
     private Date actualEndDate;
+
+    @Column(name = "WEIGHT_PERCENT")
     private Integer weightPercent;
+
+    @Column(name = "PROGRESS_PERCENT")
     private Integer progressPercent;
 
 }

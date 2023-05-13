@@ -18,7 +18,10 @@ import java.util.List;
 public class ProjectSetting extends BaseEntity {
 
     @ManyToMany
-    @JoinColumn(name = "project")
+    @JoinColumn(name = "PROJECTS", foreignKey = @ForeignKey(name = "FK_PROJECT_SETTING"))
     private List<Project> projects;
+
+    @Column(name = "ROLE_ID")
+    private Long roleId;
 
 }

@@ -17,7 +17,10 @@ import javax.persistence.*;
 public class PerformanceReport extends BaseEntity {
 
     @ManyToOne
-    @JoinColumn(name = "project_id")
+    @JoinColumn(name = "PROJECT_ID", foreignKey = @ForeignKey(name = "FK_PROJECT_PERFORMANCE_REPORT"))
     private Project project;
+
+    @Column(name = "REPORT_DESCRIPTION")
+    private String reportDescription;
 
 }

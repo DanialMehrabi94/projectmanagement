@@ -18,10 +18,23 @@ import java.util.Date;
 @AllArgsConstructor
 public class Project extends BaseEntity {
 
+    @Column(name = "TITLE")
     private String title;
+
+    @Column(name = "START_DATE")
     private Date startDate;
+
+    @Column(name = "END_DATE")
     private Date endDate;
+
+    @Column(name = "BUDGET")
     private BigDecimal budget;
+
+    @Column(name = "PROJECT_SCALE")
+    private Long projectScale;
+
+    @Column(name = "PROJECT_PROGRESS")
+    private Long projectProgress;
 
 
 }
