@@ -1,4 +1,4 @@
-package com.smartagilify.projectmanagement.enumerations;
+package com.smartagilify.projectmanagement.environments;
 
 import lombok.Getter;
 import lombok.Setter;

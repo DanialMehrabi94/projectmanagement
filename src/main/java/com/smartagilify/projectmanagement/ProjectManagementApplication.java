@@ -1,6 +1,6 @@
 package com.smartagilify.projectmanagement;
 
-import com.smartagilify.projectmanagement.enumerations.ServerProperties;
+import com.smartagilify.projectmanagement.environments.ServerProperties;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
